@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 
+const endpoint = "http://localhost:3000/api/";
 const AuthContext = createContext({
   isAuth: false,
   loginMethod: (data) => {},
@@ -10,7 +11,7 @@ const AuthContext = createContext({
 export function AuthContextProvider(props) {
   const [isAuthState, setIsAuth] = useState(false);
   const login = (data) => {
-    fetch("http://localhost:5000/api/login", {
+    fetch(`${endpoint}login`, {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
@@ -21,7 +22,7 @@ export function AuthContextProvider(props) {
     });
   };
   const signup = (data) => {
-    fetch("http://localhost:5000/api/register", {
+    fetch(`${endpoint}register`, {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
@@ -32,7 +33,7 @@ export function AuthContextProvider(props) {
     });
   };
   const forgetPassword = (email) => {
-    fetch("http://localhost:5000/api/reset_password", {
+    fetch(`${endpoint}register`, {
       method: "POST",
       body: JSON.stringify(email),
       headers: {

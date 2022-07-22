@@ -33,7 +33,10 @@ const LoginLayout = (props) => {
         If you don’t have an account register
       </span>
       <span style={{ fontSize: "16px", paddingBottom: "1rem" }}>
-        You can <Link to="/signup">Register here !</Link>
+        You can{" "}
+        <Link to="/signup" style={{ textDecoration: "none" }}>
+          Register here !
+        </Link>
       </span>
       <form>
         <TextFormField
@@ -61,7 +64,7 @@ const LoginLayout = (props) => {
               Remember
             </span>
           </div>
-          <Link to="/password">
+          <Link to="/password" style={{ textDecoration: "none" }}>
             <span style={{ fontSize: "0.7rem" }}>Forget Password ?</span>
           </Link>
         </div>
