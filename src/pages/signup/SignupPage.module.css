@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.background {
+  width: 50%;
+  height: 100vh;
+  background-color: white;
+}
+
+.child {
+  width: 50%;
+  background-color: white;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  .background {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .child {
+    width: 100%;
+  }
+}
