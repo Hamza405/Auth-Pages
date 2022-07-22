@@ -52,7 +52,11 @@ const LoginLayout = (props) => {
         />
         <div className={style.password}>
           <div>
-            <CheckBox style={{ fontSize: "25px", paddingBottom: "-20px" }} />
+            <CheckBox
+              style={{ fontSize: "20px", marginBottom: "-5px" }}
+              value="checkBox"
+              checked={false}
+            />
             <span style={{ fontSize: "0.7rem", paddingLeft: "0.5rem" }}>
               Remember
             </span>

@@ -63,7 +63,7 @@ const SignupLayout = (props) => {
           icon={<LockOutlined />}
           placeHolder="Confrim your password"
         />
-        <SizedBox />
+        <SizedBox size="2" />
         <Button
           style={{
             width: "100%",
