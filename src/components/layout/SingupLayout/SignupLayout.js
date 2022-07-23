@@ -33,7 +33,7 @@ const SignupLayout = (props) => {
       </span>
       <span style={{ fontSize: "16px", paddingBottom: "1rem" }}>
         You can{" "}
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link to="/login" style={{ textDecoration: "none" }}>
           login here !
         </Link>
       </span>
